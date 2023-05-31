@@ -1,0 +1,26 @@
+import java.util.Scanner; //not used
+
+public class PetrolPurchaseTest {
+    public static void main(String[] args) {
+        PetrolPurchase  Petrol1 = new PetrolPurchase("London", "Type: Diesel",
+                29, 1.20, 2.5);
+
+
+        System.out.printf("Location: %s %n%s %nQuantity: %dl%nPrice: £%.2f %nDiscount: %.1f%%%n%n",
+                Petrol1.getLocation(), Petrol1.getType(),
+                Petrol1.getQuantity(), Petrol1.getPrice(),
+                Petrol1.getDiscount());
+
+
+
+        // Displaying the amount to pay.
+
+        System.out.printf("The amount to pay is: £%.2f%n",Petrol1.getPurchaseAmount());
+
+
+
+
+
+
+    }
+}
