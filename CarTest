@@ -1,0 +1,23 @@
+public class CarTest {
+    public static void main(String[] args) {
+
+        // two car objects declaring the constructor
+        Car car1 = new Car("Fiat", "2001", 3250);
+        Car car2 = new Car("Mercedes", "1973", 23400);
+
+
+        // display initial value of each object
+        System.out.printf("Model: %s%nYear: %s%nPrice: £%.2f%n%n",
+                car1.getModel(), car1.getYear(), car1.getPrice());
+
+        System.out.printf("Model: %s%nYear: %s%nPrice: £%.2f%n%n",
+                car2.getModel(), car2.getYear(), car2.getPrice());
+
+        // applying discount of 5% and 7% to both car objects respectively
+        car1.setPrice(car1.getPrice() * 0.95);
+        car2.setPrice(car2.getPrice() * 0.93);
+
+        // display final value
+        System.out.printf("1st car discounted: £%.2f%n2th car discounted: £%.2f%n",car1.getPrice(), car2.getPrice());
+    }
+}
