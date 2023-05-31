@@ -1,0 +1,39 @@
+public class Car {
+    private String model;
+    private String year;
+    private double price;
+
+    // Constructor that initialize all the three variables
+    public Car(String model, String year, double price) {
+        this.model = model;
+        this.year = year;
+
+        // validate that the price is greater than 0.0, if it's not,
+        // instance variable price keeps it's default value of 0.0
+        if (price > 0.0) {
+            this.price = price;
+        }
+    }
+
+        public void setModel(String model) {
+            this.model = model;
+        }
+        public String getModel() {
+            return model;
+        }
+
+        public void setYear(String year) {
+            this.year = year;
+        }
+        public String getYear() {
+            return year;
+        }
+
+        public void setPrice(double price) {
+            this.price = price;
+        }
+        public double getPrice() {
+            return price;
+        }
+
+}
