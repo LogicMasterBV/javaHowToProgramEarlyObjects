@@ -1,0 +1,63 @@
+public class PetrolPurchase {
+
+    private String location;  //instance variable
+    private String type;
+    private int quantity;
+    private double price;
+    private double discount;
+
+    // Account constructor that receives 5 parameters
+    public PetrolPurchase(String location, String type, int quantity, double price, double discount) {
+        this.location = location;  // Assign location to instance variable location
+        this.type = type;
+        this.quantity = quantity;
+        this.price = price;
+        this.discount = discount;
+    }
+
+    //get and set methods
+    public void setLocation(String location) {
+        this.location = location;
+    }
+    public String getLocation() {
+        return location;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+    public String getType() {
+        return type;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public double getPrice() {
+        return price;
+    }
+    public void setDiscount(double discount) {
+        this.discount = discount;
+    }
+    public double getDiscount() {
+        return discount;
+    }
+
+    // Method to get the purchased amount
+    public double getPurchaseAmount() {
+        if (quantity > 0)
+            price = (quantity * price) * (1 - discount/100);
+        return price;
+    }
+
+
+
+
+}
